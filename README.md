@@ -6,8 +6,7 @@ This repository contains a NestJS application that demonstrates how to upload a 
 
 Before you begin, ensure you have met the following requirements:
 
-- You have installed the latest version of [Node.js](https://nodejs.org/)
-- You have a Windows machine. This guide is tailored for Windows users.
+- You have installed [Node.js](https://nodejs.org/)
 - You have read the [NestJS documentation](https://docs.nestjs.com/).
 - You have an AWS Account with an S3 Bucket configured.
 
