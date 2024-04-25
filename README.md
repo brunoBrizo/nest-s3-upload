@@ -1,73 +1,61 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# 🚀 NestJS AWS S3 File Upload
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This repository contains a NestJS application that demonstrates how to upload a file to an AWS S3 bucket.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## 📋 Prerequisites
 
-## Description
+Before you begin, ensure you have met the following requirements:
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- You have installed the latest version of [Node.js](https://nodejs.org/)
+- You have a Windows machine. This guide is tailored for Windows users.
+- You have read the [NestJS documentation](https://docs.nestjs.com/).
+- You have an AWS Account with an S3 Bucket configured.
 
-## Installation
+## 🛠️ Installation
 
-```bash
-$ yarn install
-```
+To install the project, follow these steps:
 
-## Running the app
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/brunoBrizo/nest-s3-upload.git
+   ```
 
-```bash
-# development
-$ yarn run start
+2. Navigate into the project directory and install the dependencies:
+   ```bash
+   cd your-repo-name
+   yarn
+   ```
 
-# watch mode
-$ yarn run start:dev
+3. Create a .env file in the root directory of the project and add your AWS credentials and S3 bucket name:
+   ```bash
+   AWS_ACCESS_KEY_ID=
+   AWS_SECRET_ACCESS_KEY=
+   AWS_REGION=
+   S3_BUCKET_NAME=
+   UPLOAD_RATE_TTL=
+   UPLOAD_RATE_LIMIT=
+   ```
 
-# production mode
-$ yarn run start:prod
-```
+## 🚀 Running the Application
 
-## Test
+To run the application, follow these steps:
 
-```bash
-# unit tests
-$ yarn run test
+1. Start the NestJS application:
+   ```bash
+   yarn dev
+   ```
 
-# e2e tests
-$ yarn run test:e2e
 
-# test coverage
-$ yarn run test:cov
-```
+The application will be running at `http://localhost:3000`.
 
-## Support
+## 📦 Usage
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+To upload a file, make a POST request to `http://localhost:3000/upload` with the file in the body of the request.
 
-## Stay in touch
+## 🤝 Contributing
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Contributions, issues and feature requests are welcome!
 
-## License
+## 📝 License
 
-Nest is [MIT licensed](LICENSE).
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
